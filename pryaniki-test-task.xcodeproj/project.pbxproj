@@ -13,6 +13,9 @@
 		04CF231028BD19300016BBCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CF230F28BD19300016BBCA /* Assets.xcassets */; };
 		04CF231328BD19300016BBCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CF231128BD19300016BBCA /* LaunchScreen.storyboard */; };
 		04CF231F28BD1F830016BBCA /* ViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF231E28BD1F830016BBCA /* ViewData.swift */; };
+		1B87446A28BF4F1F004CD121 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87446928BF4F1F004CD121 /* ViewModel.swift */; };
+		1B87446C28BF51DC004CD121 /* FetchedDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87446B28BF51DC004CD121 /* FetchedDataView.swift */; };
+		1B87446E28BF5B14004CD121 /* FetchDataView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87446D28BF5B14004CD121 /* FetchDataView + Extension.swift */; };
 		7CD4B3CF3B92C70E82F12C76 /* Pods_pryaniki_test_task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E8FA5F7C7D07316FEA63F5 /* Pods_pryaniki_test_task.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +28,9 @@
 		04CF231228BD19300016BBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04CF231428BD19300016BBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04CF231E28BD1F830016BBCA /* ViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewData.swift; sourceTree = "<group>"; };
+		1B87446928BF4F1F004CD121 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1B87446B28BF51DC004CD121 /* FetchedDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedDataView.swift; sourceTree = "<group>"; };
+		1B87446D28BF5B14004CD121 /* FetchDataView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchDataView + Extension.swift"; sourceTree = "<group>"; };
 		1E313289514A1AB4DA3E01E4 /* Pods-pryaniki-test-task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pryaniki-test-task.release.xcconfig"; path = "Target Support Files/Pods-pryaniki-test-task/Pods-pryaniki-test-task.release.xcconfig"; sourceTree = "<group>"; };
 		20D004FE270ABAF4709940CA /* Pods-pryaniki-test-task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pryaniki-test-task.debug.xcconfig"; path = "Target Support Files/Pods-pryaniki-test-task/Pods-pryaniki-test-task.debug.xcconfig"; sourceTree = "<group>"; };
 		D0E8FA5F7C7D07316FEA63F5 /* Pods_pryaniki_test_task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pryaniki_test_task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +92,7 @@
 		04CF231B28BD1F470016BBCA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1B87446928BF4F1F004CD121 /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -94,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				04CF230A28BD192F0016BBCA /* MainViewController.swift */,
+				1B87446B28BF51DC004CD121 /* FetchedDataView.swift */,
+				1B87446D28BF5B14004CD121 /* FetchDataView + Extension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,7 +129,6 @@
 				20D004FE270ABAF4709940CA /* Pods-pryaniki-test-task.debug.xcconfig */,
 				1E313289514A1AB4DA3E01E4 /* Pods-pryaniki-test-task.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -238,9 +246,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B87446A28BF4F1F004CD121 /* ViewModel.swift in Sources */,
 				04CF230B28BD192F0016BBCA /* MainViewController.swift in Sources */,
 				04CF230728BD192F0016BBCA /* AppDelegate.swift in Sources */,
+				1B87446E28BF5B14004CD121 /* FetchDataView + Extension.swift in Sources */,
 				04CF231F28BD1F830016BBCA /* ViewData.swift in Sources */,
+				1B87446C28BF51DC004CD121 /* FetchedDataView.swift in Sources */,
 				04CF230928BD192F0016BBCA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

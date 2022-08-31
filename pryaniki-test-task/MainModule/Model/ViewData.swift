@@ -9,27 +9,24 @@ import Foundation
 import ObjectMapper
 
 enum ViewData {
-    
     case initial
-    case loading(ResponseData)
+    case loading
     case success(ResponseData)
-    case failure(ResponseData)
+    case failure(Error)
 }
 
 struct ResponseData: Mappable {
     
     var data: [FetchedData] = []
-    var view: [String] = []
+    var views: [String] = []
     
     init?(map: Map) {
     }
     
     mutating func mapping(map: Map) {
         data <- map["data"]
-        view <- map["view"]
+        views <- map["view"]
     }
-    
-    
 }
 
 struct FetchedData: Mappable {
@@ -77,4 +74,10 @@ struct Variants: Mappable {
         text <- map["text"]
     }
     
+}
+
+enum Error {
+    case invalidURL
+    case noData
+    case unknownAPIResponse
 }
